@@ -1,27 +1,46 @@
 # Rainbowify
 
-Turn all your HTML text into rainbows 🌈
+Turn all your react text into rainbows 🌈
 
 ### Install
 
-Download the script and drop a link at the bottom of your HTML file.
+Install the npm package:
 
-```html
-<script src = "js/rainbow.js"></script>
+```bash
+npm install @ahl389/react-rainbowify
 ```
 
-In your HTML, add the class `rainbow` to any element whose contents you want to be rendered in rainbow when the script executes. This script won't change the actual contents of your HTML file.
-
-That's it! Want to use colors that differ from the default?
-
-Add some config info:
+### Usage
+Import the package at the top of your React component:
 
 ```javascript
-rainbow.config({
-	colors: [<your hex code here>, <your hex code here>, <your hex code here>, <your hex code here>]
-});
+import rainbowify from '@ahl389/rainbowify';
 ```
 
-There's no limit on the number of colors you can add to the array. Must use hex codes.
+Wrap the desired JSX in a call to `rainbowify()`:
 
+```javascript
+function App() {
+  return (
+    <div>
+      { rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>) }
+    </div>
+  );
+}
+```
 
+If you don't want to use the default rainbow colors, you can pass an array of hex codes to be used instead as a second argument. If you use a custom color array, there's no limit on the number of colors you can add, but you must use valid hex codes: '#800080'
+
+```javascript
+function App() {
+	const customColors = ['#800080', '#000080', '#FF00FF'];
+
+  return (
+    <div>
+      { rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>, customColors) }
+    </div>
+  );
+}
+```
+
+Have fun!
