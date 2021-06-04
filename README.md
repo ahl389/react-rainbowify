@@ -1,6 +1,8 @@
 # Rainbowify
 
-Turn all your react text into rainbows 🌈
+Turn all your React.js text into rainbows 🌈
+
+<img src = "./demo.png">
 
 ### Install
 
