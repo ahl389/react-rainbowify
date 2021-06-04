@@ -4,7 +4,7 @@ Turn all your react text into rainbows 🌈
 
 ### Install
 
-Install the npm package:
+Install the npm package in your React app:
 
 ```bash
 npm install @ahl389/react-rainbowify
