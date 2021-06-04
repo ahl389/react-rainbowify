@@ -22,7 +22,7 @@ Wrap the desired JSX in a call to `rainbowify()`:
 ```javascript
 function App() {
   return (
-		rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>) }
+    rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>) }
   );
 }
 ```
