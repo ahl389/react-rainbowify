@@ -16,7 +16,7 @@ npm install @ahl389/react-rainbowify
 Import the package at the top of your React component:
 
 ```javascript
-import rainbowify from '@ahl389/rainbowify';
+import rainbowify from '@ahl389/react-rainbowify';
 ```
 
 Wrap the desired JSX in a call to `rainbowify()`:
@@ -24,7 +24,7 @@ Wrap the desired JSX in a call to `rainbowify()`:
 ```javascript
 function App() {
   return (
-    rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>) }
+    rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>) 
   );
 }
 ```
@@ -36,7 +36,7 @@ function App() {
   const customColors = ['#800080', '#000080', '#FF00FF'];
 
   return (
-    rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>, customColors) }
+    rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>, customColors) 
   );
 }
 ```
