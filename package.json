@@ -1,6 +1,6 @@
 {
   "name": "@ahl389/react-rainbowify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Turn your react text into rainbows!",
   "main": "rainbow.js",
   "scripts": {

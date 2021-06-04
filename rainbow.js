@@ -9,7 +9,7 @@ class Rainbow {
   
   /**
    * Validates that the provided hex values are valid
-   * @param  {obj}    configSettings - An object with one property (colors), an array of hex colors
+   * @param  {array}    config - An array of hex colors
    */
   validateConfig(config) {
     if (Array.isArray(config)) {
@@ -37,6 +37,7 @@ class Rainbow {
   /** 
    * Indentifies the nodes to be colorized, and initializes the colorizing
    * process for the each node
+   * @param  {obj or string}     text - the text or JSX object passed by the user
    */
   rainbowify(text) {
     const nodes = text.props ? [...text.props.children] : [text];
@@ -50,7 +51,8 @@ class Rainbow {
   /** 
    * Processes each node by identifying any childnodes and sending them to be
    * colorized
-   * @param  {node}     node - the node to be processed
+   * @param  {obj}     node - the JSX object to be processed
+   * @param  {string}     nodeType - the type of JSX object
    */
   processNode(node, nodeType) {
     this.rainbow += `<${nodeType}>`;
@@ -76,11 +78,10 @@ class Rainbow {
 
   /** 
    * Applies correct color to passed node
-   * @param  {node}     node - the node to be colorized
-   * @return {string}	  rainbowified - the string of colorized text to be inserted into the node
+   * @param  {string}     text - the text to be colorized
    */
-  applyColorStyles(node){
-    for (let char of node) {
+  applyColorStyles(text){
+    for (let char of text) {
   
       // If the character has extra whitespace around it, like a line break, we
       // remove it so the white space does not count as a character to be colorized.
