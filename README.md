@@ -22,9 +22,7 @@ Wrap the desired JSX in a call to `rainbowify()`:
 ```javascript
 function App() {
   return (
-    <div>
-      { rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>) }
-    </div>
+		rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>) }
   );
 }
 ```
@@ -36,9 +34,7 @@ function App() {
   const customColors = ['#800080', '#000080', '#FF00FF'];
 
   return (
-    <div>
-      { rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>, customColors) }
-    </div>
+    rainbowify(<><h1>Hello, and welcome to Rainbowify.</h1><p>Everything here is gay.</p></>, customColors) }
   );
 }
 ```
