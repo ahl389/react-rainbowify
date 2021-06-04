@@ -1,0 +1,29 @@
+{
+  "name": "@ahl389/react-rainbowify",
+  "version": "1.0.3",
+  "description": "Turn your react text into rainbows!",
+  "main": "rainbow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahl389/rainbowify.git"
+  },
+  "keywords": [
+    "rainbow",
+    "queer",
+    "gay",
+    "html",
+    "javascript"
+  ],
+  "author": "Ashley Boucher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahl389/rainbowify/issues"
+  },
+  "homepage": "https://github.com/ahl389/rainbowify#readme",
+  "dependencies": {
+    "html-react-parser": "^1.2.6"
+  }
+}
