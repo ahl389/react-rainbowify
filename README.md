@@ -33,7 +33,7 @@ If you don't want to use the default rainbow colors, you can pass an array of he
 
 ```javascript
 function App() {
-	const customColors = ['#800080', '#000080', '#FF00FF'];
+  const customColors = ['#800080', '#000080', '#FF00FF'];
 
   return (
     <div>
